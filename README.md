@@ -1,2 +1,2 @@
 # bilibli_selenium
-本站自动登录
+B站自动登录
