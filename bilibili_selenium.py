@@ -60,9 +60,7 @@ class BilibiliSelenium(object):
                 # 获取滑动距离
                 self.position = slide.defference_between_bg_fullbg()
                 # print(self.position)
-            # 如果无法获取到fullbg/bg,则直接截取验证码图片,调用single_img_position
-            else:
-                screenshot = browser.save_screenshot('./static/screenshot.png')
+
             if self.position:
                 self.slide_img(browser, self.position)
 
