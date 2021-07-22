@@ -51,14 +51,14 @@ class BilibiliSelenium(object):
             get_fullbg = self.get_fullbg(browser)
             # 获取当前滑动验证码
             get_bg = self.get_bg(browser)
-            # 如果可以获取到fullbg/bg,则调用defference_between_bg_fullbg
+            # 如果可以获取到fullbg/bg,则调用difference_between_bg_fullbg
             if get_fullbg and get_bg:
                 # 实例化Slide_IMG_Position对象
                 slide = Get_Slide_IMG_Position()
                 slide.bg_img_path = './static/bg.png'
                 slide.fullbg_img_path = './static/fullbg.png'
                 # 获取滑动距离
-                self.position = slide.defference_between_bg_fullbg()
+                self.position = slide.difference_between_bg_fullbg()
                 # print(self.position)
 
             if self.position:

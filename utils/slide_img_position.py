@@ -10,7 +10,7 @@ class Get_Slide_IMG_Position(object):
         self.fullbg_img_path = fullbg_img_path
 
     # 比较两张图片的像素点，获得坐标缺口
-    def defference_between_bg_fullbg(self):
+    def difference_between_bg_fullbg(self):
 
         # 两张图同时存在则进行处理
         if self.bg_img_path and self.fullbg_img_path:
