@@ -1,4 +1,4 @@
-import base64
+﻿import base64
 import os
 import random
 from time import sleep
@@ -69,7 +69,7 @@ class BilibiliSelenium(object):
             # 登录成功后等待跳转加载
             sleep(2)
             start_url = browser.current_url
-            if start_url == '':
+            if start_url == 'https://passport.bilibili.com/login':
                 # 验证码不能一次通过时重试
                 fresh_btn = browser.find_element_by_xpath('/html/body/div[2]/div[2]/div[6]/div/div[2]/div/a[2]')
                 fresh_btn.click()

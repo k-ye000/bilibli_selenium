@@ -1,4 +1,4 @@
-from PIL import Image
+﻿from PIL import Image
 import numpy as np
 
 
@@ -62,11 +62,3 @@ class Get_Slide_IMG_Position(object):
             pass
         else:
             raise ValueError('缺少slide_img_path参数')
-
-
-# slide = Get_Slide_IMG_Position()
-# slide.bg_img_path = './static/bg.png'
-# slide.fullbg_img_path = './static/fullbg.png'
-# # 获取滑动距离
-# position = slide.defference_between_bg_fullbg()
-# print(position)
